@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --lines-height: 2vmin;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    width: 82vmin;
+    height: 82vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    border: 10px solid rgba(0 0 0 /.7);
+    border-radius: 10px;
+}
+
+.white {
+    width: 72vmin;
+    height: 72vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-clip: content-box;
+}
+
+.yellow {
+    position: relative;
+    top: -5vmin;
+    left: -5vmin;
+    width: 0vmin;
+    height: 0vmin;
+    border-top: 20vmin solid yellow;
+    border-right: 20vmin solid white;
+    border-left: 20vmin solid yellow;
+    border-bottom: 20vmin solid white;
+    background-color: yellow;
+}
+
+.lines {
+    position: relative;
+    top: -16vmin;
+    left: -16vmin;
+    background: black;
+    width: 40vmin;
+    height: var(--lines-height);
+    box-shadow: 0px calc(var(--lines-height) * 2), 0px calc(var(--lines-height) * 4), 0px calc(var(--lines-height) * 6), 0px calc(var(--lines-height) * 8), 0px calc(var(--lines-height) * 10), 0px calc(var(--lines-height) * 12), 0px calc(var(--lines-height) * 14), 0px calc(var(--lines-height) * 16), 0px calc(var(--lines-height) * 18) black;
+}
